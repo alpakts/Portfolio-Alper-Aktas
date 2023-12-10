@@ -11,7 +11,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<link rel="shortcut icon" href="./images/A-icon.png" type="image/x-icon">
 		<!-- animate -->
 		<link rel="stylesheet" href="css/animate.min.css">
 		<!-- bootstrap -->
@@ -167,7 +167,7 @@
 				</div>
 				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/migros.png" class="img-responsive" alt="portfolio img">
+						<img src="images/migros.png" class="img-responsive" alt="portfolio img" loading="lazy">
 							<div class="portfolio-overlay">
 								<h4>Responsive Mobile Web App</h4>
 							</div>
@@ -175,7 +175,7 @@
 				</div>
 				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/landing.png" class="img-responsive" alt="portfolio img">
+						<img src="images/landing.png" class="img-responsive" alt="portfolio img" loading="lazy">
 							<div class="portfolio-overlay">
 								<h4>Responsive Landing Page</h4>
 							</div>
@@ -183,7 +183,7 @@
 				</div>
 				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/qutote.png" class="img-responsive" alt="portfolio img">
+						<img src="images/qutote.png" class="img-responsive" alt="portfolio img" loading="lazy">
 							<div class="portfolio-overlay">
 								<h4>Quote Generator</h4>
 							</div>
@@ -191,7 +191,7 @@
 				</div>
 				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/ik-project.png" class="img-responsive" alt="portfolio img">
+						<img src="images/ik-project.png" class="img-responsive" alt="portfolio img" loading="lazy">
 							<div class="portfolio-overlay">
 								<h4>Hire Project</h4>
 							</div>
@@ -199,7 +199,7 @@
 				</div>
 				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/dark-mode.png" class="img-responsive" alt="portfolio img">
+						<img src="images/dark-mode.png" class="img-responsive" alt="portfolio img" loading="lazy">
 							<div class="portfolio-overlay">
 								<h4>Dark Mode </h4>
 							</div>
@@ -229,7 +229,11 @@
 							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
 							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
 							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
-							<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+						
+							<input class="g-recaptcha"
+							data-sitekey="6LfRTSwpAAAAAELHizJJpthyAl_a62alDbheETFf"
+							data-callback='onSubmit'
+							data-action='submit' name="send" type="submit" class="form-control" id="send" value="SEND ME">
 						</form>
 					</div>
 					<div class="col-md-1 col-sm-1"></div>
@@ -259,7 +263,7 @@
 		<!-- end footer -->
 
 	</div>
-
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- bootstrap -->

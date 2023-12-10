@@ -17,3 +17,8 @@
     opacity: 1;
     color: limegreen;
 }
+.g-recaptcha{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
